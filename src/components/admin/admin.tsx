@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from './admin.module.scss';
+import { Link } from 'react-router-dom';
 
 export interface AdminProps {
     className?: string;
@@ -12,21 +13,32 @@ export interface AdminProps {
 export const Admin = ({ className }: AdminProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.title}>ADMIN HOME PAGE</div>
+            <div className={styles.title}>ADMIN DASHBOARD</div>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
+                    <table className={styles.table}>
+                        <tr>
+                            <td className={styles.td}><Link to="/ViewOrgList">View Organization Lists</Link></td>
+                            <td className={styles.td}><Link to="/ViewDonorList">View Donor Lists</Link></td>
+                            <td className={styles.td}><Link to="/ViewOrgSubmissions">Review Organization Submissions</Link></td>
+                        </tr>
+                        <tr>
+                        <td className={styles.td}><Link to="">Review Donor Submissions</Link></td>
+                            <td className={styles.td}><Link to="/ViewOrgRequests">Manage Organization Requests</Link></td>
+                            <td className={styles.td}>Manage Donor Requests</td>
+                            
+                        </tr>
+                        <tr>
+                        <td className={styles.td} ><Link to="/ChangePassword">Password Management</Link></td>
+                            <td className={styles.td}><Link to="/ViewOrganizations">View Registered Organizations</Link></td>
+                            <td className={styles.td}>View Organization Details</td>
+                        </tr>
+                        
+                    </table>
                 </div>
             </div>
             <button className={styles.button}>Learn more</button>
-            <img
-                src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                alt=""
-                className={styles.image}
-            />
+            
         </div>
     );
 };
