@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from './admin.module.scss';
+import { Link } from 'react-router-dom';
 
 export interface AdminProps {
     className?: string;
@@ -10,32 +11,34 @@ export interface AdminProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Admin = ({ className }: AdminProps) => {
-    function onClick() {
-        window.location.href = '/organization';
-    }
-    function onClic() {
-        window.location.href = '/view-donors';
-    }
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.title}>ADMIN HOME PAGE</div>
+            <div className={styles.title}>ADMIN DASHBOARD</div>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                Welcome to the admin page! Here, you oversee critical aspects of our blood donation 
-                operations. Access donor registrations, blood inventory, drives, and volunteer activities 
-                with intuitive tools. Your role ensures transparency, efficiency, and impactful 
-                decision-making. Thank you for your dedication in saving lives through blood donation!
+                    <table className={styles.table}>
+                        <tr>
+                            <td className={styles.td}><Link to="/ViewOrgList">View Organization Lists</Link></td>
+                            <td className={styles.td}><Link to="/ViewDonorList">View Donor Lists</Link></td>
+                            <td className={styles.td}><Link to="/ViewOrgSubmissions">Review Organization Submissions</Link></td>
+                        </tr>
+                        <tr>
+                        <td className={styles.td}><Link to="">Review Donor Submissions</Link></td>
+                            <td className={styles.td}><Link to="/ViewOrgRequests">Manage Organization Requests</Link></td>
+                            <td className={styles.td}>Manage Donor Requests</td>
+                            
+                        </tr>
+                        <tr>
+                        <td className={styles.td} ><Link to="/ChangePassword">Password Management</Link></td>
+                            <td className={styles.td}><Link to="/ViewOrganizations">View Registered Organizations</Link></td>
+                            <td className={styles.td}>View Organization Details</td>
+                        </tr>
+                        
+                    </table>
                 </div>
             </div>
             <button className={styles.button}>Learn more</button>
-            <img
-                src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
-                alt=""
-                className={styles.image}
-            />
-            <button className={styles.button1} onClick={onClic}>View Donor List</button>
             
-            <button className={styles.button2} onClick={onClick}>View Organizations</button>
         </div>
     );
 };
