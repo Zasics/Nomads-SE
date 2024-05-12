@@ -10,23 +10,29 @@ export interface HomePageProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const HomePage = ({ className }: HomePageProps) => {
+    function onClick() {
+        window.location.href = '/register';
+    }
+
     return (
         <div className={classNames(styles.root, className)}>
-            <div className={styles.title}>I&apos;M A TITLE</div>
-            <div className={styles.paragraph}>
-                <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
-                </div>
-            </div>
-            <button className={styles.button}>Learn more</button>
             <img
-                src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dwixplosives.github.io/codux-assets-storage/add-panel/image-placeholder.jpg"
+                src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "
                 alt=""
                 className={styles.image}
             />
+            <div className={styles.title}>Where Generosity Connects</div>
+            <div className={styles.paragraph}>
+                <div className={styles.text}>
+                    Welcome to HelpingHands, your dedicated platform for non-monetary donations.
+                    Together, we bridge the gap between those who have and those who need. Explore
+                    our wide range of donation categories—from clothes and toys to medical supplies
+                    and books—and find out how you can make a difference today!
+                </div>
+            </div>
+            <button className={styles.button} onClick={onClick}>
+                Start Your Journey{' '}
+            </button>
         </div>
     );
 };

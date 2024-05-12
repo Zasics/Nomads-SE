@@ -7,11 +7,11 @@
     justify-content: space-between;
     padding-right: 3.5em;
     align-items: center;
-    height: 4em;
+    height: 5em;
     font: $button-font;
 
     @media only screen and (max-width: $mobile-width) {
-        padding: 0 3em
+        padding: 0 3em;
     }
 }
 
@@ -24,4 +24,14 @@
 .active {
     color: $black;
     font-weight: 600;
+}
+.navtitle {
+    position: relative;
+    font-size: 25px;
+}
+.navlogo {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 5px;
 }

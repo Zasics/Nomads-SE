@@ -8,7 +8,6 @@
     background-color: $snow-white;
     padding-top: 2em;
     padding-bottom: 2em;
-    height: 80vh;
 }
 
 .title {
@@ -40,7 +39,7 @@
 .button {
     font: $button-font;
     text-align: center;
-    background-color: $logo-dark-blue;
+    background-color: $black;
     color: $white;
     border-radius: 9999px;
     align-self: center;
@@ -48,17 +47,6 @@
     padding-left: 26px;
     padding-bottom: 12px;
     padding-top: 12px;
-    &:hover {
-        background-color: #2b2f31;
-        background-image: none;
-        background-position: 0%;
-        background-size: auto;
-        background-repeat: repeat;
-        background-attachment: scroll;
-        background-origin: padding-box;
-        background-clip: border-box;
-        font-size: 0.95rem;
-    }
 }
 
 .image {

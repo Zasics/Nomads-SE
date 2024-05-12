@@ -11,13 +11,14 @@
     padding-right: 7em;
     padding-left: 7em;
     column-gap: 5em;
+    height: 80vh;
+    align-items: center;
 }
 
 .title {
     font: $title-font;
     letter-spacing: 0.4rem;
 }
-
 
 .paragraph {
     margin-bottom: 1.5em;
@@ -32,7 +33,6 @@
     flex-direction: column;
     row-gap: 1em;
 }
-
 
 .image {
     align-self: center;
