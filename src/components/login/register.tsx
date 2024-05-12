@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import styles from './login.module.scss';
 import LogoWithTextPng from '../../assets/logo-with-text.png';
+import Register_module from './register.module.scss';
 
 export interface RegisterProps {
     className?: string;
@@ -31,8 +32,14 @@ export const Register = ({ className }: RegisterProps) => {
         } else if (formData.get('password') !== formData.get('confirmPassword')) {
             alert('Passwords do not match!');
         } else {
-            alert('Registration successful!');
-            window.location.href = '/login';
+            if(formData.get('userType') === 'donor') {
+                alert('Registration successful!');
+                window.location.href = '/donor';
+            }
+            else {
+                alert('Registration successful!');
+                window.location.href = '/organization';
+            }
         }
     }
 
@@ -42,6 +49,13 @@ export const Register = ({ className }: RegisterProps) => {
             <div className={styles.formFrame}>
                 <div className={styles.title}>Register Now!</div>
                 <form className={styles.form} onSubmit={handleSubmit}>
+                    <div className={Register_module['hor-frame']}>
+                        <label className={styles.formLabel}>Register as:</label>
+                        <select name="userType" className={styles.input}>
+                            <option value="donor">Donor</option>
+                            <option value="organization">Organization</option>
+                        </select>
+                    </div>
                     <label className={styles.formLabel}>Email:</label>
                     <input name="email" type="text" className={styles.input} />
                     <label className={styles.formLabel}>First Name:</label>
