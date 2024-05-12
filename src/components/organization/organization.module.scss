@@ -4,7 +4,7 @@
     font: $large-font;
     display: flex;
     flex-direction: column;
-    row-gap: 0.5em;
+    row-gap: 60px;
     background-color: $snow-white;
     padding-top: 2em;
     padding-bottom: 2em;
@@ -39,7 +39,7 @@
 .button {
     font: $button-font;
     text-align: center;
-    background-color: $black;
+    background-color: #2a2929;
     color: $white;
     border-radius: 9999px;
     align-self: center;
@@ -47,6 +47,51 @@
     padding-left: 26px;
     padding-bottom: 12px;
     padding-top: 12px;
+    background-image: linear-gradient(#333232, #333232);
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-image: linear-gradient(#393838, #393838);
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-image: linear-gradient(#333232, #333232);
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-image: none;
+    background-position: 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    &:hover {
+        background-color: #575d60;
+        background-image: linear-gradient(#2d3133, #2d3133);
+        background-position: 0%;
+        background-size: auto;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        background-clip: border-box;
+        background-image: none;
+        background-position: 0%;
+        background-size: auto;
+        background-repeat: repeat;
+        background-attachment: scroll;
+        background-origin: padding-box;
+        background-clip: border-box;
+    }
 }
 
 .image {
@@ -54,4 +99,9 @@
     height: 14em;
     margin-top: 1em;
     width: 24em;
+}
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

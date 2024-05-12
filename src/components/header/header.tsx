@@ -55,22 +55,28 @@ export const Header = ({ className }: HeaderProps) => {
                 </a>
                 <div className={styles.menu}>
                     <NavLink
-                        to="/"
+                        to="/organization"
                         className={({ isActive }) => classNames({ [styles.active]: isActive })}
                     >
                         Home
                     </NavLink>
                     <NavLink
-                        to="/about"
+                        to="/organization/create-post"
                         className={({ isActive }) => classNames({ [styles.active]: isActive })}
                     >
-                        About
+                        Create Donation Post
                     </NavLink>
                     <NavLink
-                        to="/organization"
+                        to="/organization/manage-posts"
                         className={({ isActive }) => classNames({ [styles.active]: isActive })}
                     >
-                        Organization
+                        Manage Posts
+                    </NavLink>
+                    <NavLink
+                        to="/organization/donations-received"
+                        className={({ isActive }) => classNames({ [styles.active]: isActive })}
+                    >
+                        Donations Received
                     </NavLink>
                 </div>
                 <img src={Bell2Png} onClick={notification} alt="" className={styles.icon} />
