@@ -15,10 +15,15 @@ export const Organization = ({ className }: OrganizationProps) => {
             <div className={styles.title}>ORGANIZATION HOME PAGE</div>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
+                Welcome to our organization's page dedicated to saving lives through blood donation! At 
+                our core, we are driven by the belief that every individual has the power to make a 
+                difference. Through our collective efforts, we strive to provide a lifeline to those 
+                in need by ensuring a stable and sustainable blood supply. With a focus on innovation, 
+                collaboration, and community engagement, we work tirelessly to coordinate donation 
+                drives, manage inventory, and support patients in their time of need. Together, we 
+                embody the spirit of compassion and generosity, transforming the lives of countless 
+                individuals one donation at a time. Join us in our mission to make a lifesaving impact 
+                and spread hope and healing throughout our community and beyond.
                 </div>
             </div>
             <button className={styles.button}>Learn more</button>
