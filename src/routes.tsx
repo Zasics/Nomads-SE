@@ -7,9 +7,13 @@ import { Register } from './components/login/register';
 import { Admin } from './components/admin/admin';
 import { Donor } from './components/donor/donor';
 import { Organization } from './components/organization/organization';
-import { DonationsReceived } from './components/organization/donations-received';
-import { ManagePosts } from './components/organization/manage-posts';
-import { CreatePost } from './components/organization/create-post';
+import { ViewOrganizations } from "./components/admin/vieworganizations";
+import { ViewOrgDetails } from "./components/admin/orgdetails";
+import { ViewRequests } from "./components/admin/viewrequests";
+import { ViewOrgRequests } from "./components/admin/vieworgrequests";
+import { ViewOrgList } from "./components/admin/vieworglist";
+import { ViewDonorList } from "./components/admin/viewdonorlist";
+import { ChangePassword } from "./components/admin/changepassword";
 
 export const routes: RouteObject[] = [
     {
@@ -23,9 +27,14 @@ export const routes: RouteObject[] = [
             { path: 'admin', element: <Admin /> },
             { path: 'donor', element: <Donor /> },
             { path: 'organization', element: <Organization /> },
-            { path: 'organization/create-post', element: <CreatePost /> },
-            { path: 'organization/manage-posts', element: <ManagePosts /> },
-            { path: 'organization/donations-received', element: <DonationsReceived /> },
+            { path: 'vieworganizations', element: <ViewOrganizations /> },
+            { path: 'orgdetails', element: <ViewOrgDetails /> },
+            { path: 'viewrequests', element: <ViewRequests /> },
+            { path: 'vieworgrequests', element: <ViewOrgRequests /> },
+            { path: 'vieworglist', element: <ViewOrgList /> },
+            { path: 'viewdonorlist', element: <ViewDonorList /> },
+            { path: 'changepassword', element: <ChangePassword /> },
+            
         ],
     },
 ];
