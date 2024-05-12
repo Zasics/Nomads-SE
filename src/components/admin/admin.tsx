@@ -21,10 +21,10 @@ export const Admin = ({ className }: AdminProps) => {
             <div className={styles.title}>ADMIN HOME PAGE</div>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
+                Welcome to the admin page! Here, you oversee critical aspects of our blood donation 
+                operations. Access donor registrations, blood inventory, drives, and volunteer activities 
+                with intuitive tools. Your role ensures transparency, efficiency, and impactful 
+                decision-making. Thank you for your dedication in saving lives through blood donation!
                 </div>
             </div>
             <button className={styles.button}>Learn more</button>

@@ -15,10 +15,11 @@ export const Donor = ({ className }: DonorProps) => {
             <div className={styles.title}>DONOR HOME PAGE</div>
             <div className={styles.paragraph}>
                 <div className={styles.text}>
-                    I’m a paragraph. Add your own text and edit me on properties panel on the right.
-                    It’s easy. Just select me and make changes to the font on the styles panel on
-                    the right. I’m a great place for you to tell a story and let your viewers know a
-                    little more about you.
+                Welcome to our donor page! Your decision to donate blood saves lives. Your generosity 
+                ensures hospitals have the blood they need for emergencies, surgeries, and illnesses. 
+                Whether you're a first-timer or a regular donor, your contribution is invaluable. Find 
+                upcoming drives, learn about the process, and register to donate here. Thank you for 
+                considering becoming a donor and joining us in our mission to save lives.
                 </div>
             </div>
             <button className={styles.button}>Learn more</button>
