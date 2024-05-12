@@ -14,7 +14,7 @@ export const Admin = ({ className }: AdminProps) => {
         window.location.href = '/organization';
     }
     function onClic() {
-        window.location.href = '/donor';
+        window.location.href = '/view-donors';
     }
     return (
         <div className={classNames(styles.root, className)}>

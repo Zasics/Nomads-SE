@@ -1,0 +1,36 @@
+@import '@styles/theme.module.scss';
+
+.root {
+    font: $large-font;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    background-color: $snow-white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    align-items: start;
+    align-content: start;
+    justify-content: start;
+    font-weight: 400;
+    border: 10px solid $snow-white;
+}
+.title {
+    font: $title-font;
+    text-align: center;
+    letter-spacing: 0.4rem;
+
+    @media only screen and (max-width: $mobile-width) {
+        font-size: 3rem;
+    }
+}
+.paragraph {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    font: $paragraph-font;
+
+    @media only screen and (max-width: $mobile-width) {
+        font-size: 1rem;
+    }
+}
