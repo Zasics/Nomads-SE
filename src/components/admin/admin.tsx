@@ -10,6 +10,12 @@ export interface AdminProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Admin = ({ className }: AdminProps) => {
+    function onClick() {
+        window.location.href = '/organization';
+    }
+    function onClic() {
+        window.location.href = '/donor';
+    }
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.title}>ADMIN HOME PAGE</div>
@@ -27,6 +33,9 @@ export const Admin = ({ className }: AdminProps) => {
                 alt=""
                 className={styles.image}
             />
+            <button className={styles.button1} onClick={onClic}>View Donor List</button>
+            
+            <button className={styles.button2} onClick={onClick}>View Organizations</button>
         </div>
     );
 };

@@ -28,5 +28,7 @@ export const Donor = ({ className }: DonorProps) => {
                 className={styles.image}
             />
         </div>
+        
     );
+   
 };
