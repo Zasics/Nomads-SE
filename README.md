@@ -1,33 +1,16 @@
 <div align="center">  
-    <img height="50" src="./src/assets/codux.svg">  
-    <h1><img height="30" src="./src/assets/vite.svg"> Vite template for Codux</h1>
+    <img height="250" src="./src/assets/logo-with-text.png">  
+   
 </div>
 
-### A Visual IDE for React Projects
+# HelpingHands - SE Project by team Nomads
 
-Codux is an all-in-one visual development environment. Whether you’re starting a new app, creating components, or editing an existing project, every visual change you make reflects instantly in the code and vice versa. To learn more about Codux, visit our website - [https://www.codux.com/](https://www.codux.com/)
+Welcome to the official repository of HelpingHands, a platform dedicated to facilitating non-monetary donations across a variety of categories including clothes, toys, medical supplies, and more. Our mission is to create a bridge between donors and recipients, making it easier for everyone to contribute to meaningful causes.
 
-This project was bootstrapped with [`Vite`](https://vitejs.dev).
+## Getting Started
 
-It includes a single React component to start your project with, a sample [`codux.config.json`](codux.config.json) with preconfigured keys, a `package.json` file to describe the project's packages and dependencies, and a folder and component structure to put everything neatly in its place.
-
-- Edit, render and compose apps that make use of **`React`**-based components.
-- Create components with **`TypeScript`**, **`SCSS`** and **`CSS Modules`** support.
-- Visually edit in real-time and in an isolated environment.
-
-### Available Scripts
-
-In the project directory, you can run:
-
-### `npm run build`
-
-Build the application in production mode into a folder named `dist`. This folder can be served using any HTTP server.
-
-### `npm run dev`
-
-Start dev server, aliases: `vite dev`, `vite serve`.\
-Open [http://127.0.0.1:5173/](http://127.0.0.1:5173/) to view it in the browser.
-
-### `npm run preview`
-
-Boots up a local static web server that serves the files from dist at [`http://localhost:4173`](http://localhost:4173) . It's an easy way to check if the production build looks OK in your local environment.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+- Install dependencies:
+  > npm install
+- Start the development server:
+  > npm run dev
